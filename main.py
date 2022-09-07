@@ -1,7 +1,9 @@
 import os
 
 # 设置端口号
-PORT = 1080
+#PORT = 1080
+
+PORT = int(input())
 
 result = os.popen('netstat -aon|findstr "%d"' % PORT)
 res = result.read()
